@@ -6,7 +6,7 @@
 /*   By: bsprigga <bsprigga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 15:28:07 by bsprigga          #+#    #+#             */
-/*   Updated: 2018/12/04 20:29:15 by bsprigga         ###   ########.fr       */
+/*   Updated: 2019/02/16 14:30:02 by bsprigga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,10 +83,7 @@ char			**ft_strsplit(char const *s, char c)
 	k = count_words(s, c);
 	res = (char **)malloc(sizeof(char *) * (k + 1));
 	if (res == NULL)
-	{
-		free(res);
 		return (NULL);
-	}
 	res = word_split(res, s, c, k);
 	return (res);
 }
